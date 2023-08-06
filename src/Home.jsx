@@ -20,6 +20,12 @@ const HeadingOption = {
   color: 'white',
 };
 
+const img={
+  h:"full",
+  w:"full",
+  objectFit:"cover"
+}
+
 const Home = () => {
   return (
     <Box>
@@ -67,19 +73,19 @@ const MyCarousel = () => {
       showArrows={false}
     >
       <Box w={'full'} h={'100vh'}>
-        <Image src={Pic1} />
+        <Image {...img} src={Pic1} />
         <Heading {...HeadingOption}>Watch the Future</Heading>
       </Box>
       <Box w={'full'} h={'100vh'}>
-        <Image src={Pic2} />
+        <Image {...img} src={Pic2} />
         <Heading {...HeadingOption}>Future is Gaming</Heading>
       </Box>
       <Box w={'full'} h={'100vh'}>
-        <Image src={Pic3} />
+        <Image {...img} src={Pic3} />
         <Heading {...HeadingOption}>Gaming on Console</Heading>
       </Box>
       <Box w={'full'} h={'100vh'}>
-        <Image src={Pic4} />
+        <Image {...img} src={Pic4} />
         <Heading {...HeadingOption}>Night Life is Cool</Heading>
       </Box>
     </Carousel>
